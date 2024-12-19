@@ -1,0 +1,50 @@
+.burger-button {
+  background: none;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 23px;
+  cursor: pointer;
+  padding: 0;
+  position: relative;
+  z-index: 10;
+  transition: transform 0.3s ease-in-out;
+
+  &:focus {
+    outline: none;
+  }
+
+  .line {
+    width: 24px;
+    height: 1.5px;
+    background-color: white;
+    border-radius: 1px;
+    transition: all 0.3s ease-in-out;
+
+    margin: auto;
+
+    &:nth-child(1) {
+      transform-origin: left;
+    }
+
+    &:nth-child(3) {
+      bottom: 0;
+      transform-origin: left;
+    }
+  }
+
+  &.open {
+    .line:nth-child(1) {
+      transform: rotate(45deg) translateY(0);
+    }
+
+    .line:nth-child(2) {
+      opacity: 0;
+    }
+
+    .line:nth-child(3) {
+      transform: rotate(-45deg) translateY(0);
+    }
+  }
+}

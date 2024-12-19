@@ -1,0 +1,40 @@
+.footer {
+  height: 127px;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  position: relative;
+}
+
+.footer__image {
+  position: absolute;
+  width: 110px;
+  height: 100px;
+  top: 1px;
+}
+
+.footer__text {
+  position: absolute;
+  color: #ebff00;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 28px;
+  bottom: 15px;
+}
+
+@media (min-width: 768px) {
+  .footer__image {
+    top: 2px;
+  }
+}
+@media (min-width: 1248px) {
+  .footer__image {
+    top: -2px;
+  }
+  .footer__text {
+    bottom: 23px;
+  }
+}

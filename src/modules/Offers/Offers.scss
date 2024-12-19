@@ -1,0 +1,47 @@
+.offers {
+  padding: 50px 20px;
+  display: flex;
+  width: 320px;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.offers__title {
+  text-align: left;
+  font-family: 'Lato';
+  font-size: 18px;
+  font-weight: 900;
+  margin-bottom: 30px;
+}
+.offers__cards {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .offers {
+    padding: 56px 30px;
+    width: 709px;
+    margin: 0 auto;
+  }
+  .offers__title {
+    font-size: 24px;
+  }
+  .offers__cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 1248px) {
+  .offers {
+    padding: 56px 80px;
+    width: 1088px;
+    margin: 0 auto;
+  }
+  .offers__title {
+    margin-top: 1px;
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+}
